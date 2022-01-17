@@ -1,0 +1,4 @@
+aws cloudformation deploy --template-file ./CloudFormationTemplate-LAMP.json `
+--stack-name hotel-booking `
+--parameter-overrides DBName=hb DBUser=hb DBPassword=hb DBRootPassword=hb `
+--tags owner=hb application=hb 
